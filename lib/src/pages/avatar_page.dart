@@ -7,6 +7,12 @@ class AvatarPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Avatar Page'),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.keyboard_return),
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
     );
   }
 }
